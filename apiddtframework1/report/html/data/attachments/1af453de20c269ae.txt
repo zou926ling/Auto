@@ -1,0 +1,26 @@
+2022-05-12 11:13:31 [client.py:19] [INFO] 接口地址是:http://82.156.74.26:9099/login
+2022-05-12 11:13:31 [client.py:20] [INFO] 接口请求方式是:post
+2022-05-12 11:13:31 [client.py:22] [INFO] 接口的verify是:False
+2022-05-12 11:13:31 [client.py:22] [INFO] 接口的data是:{'username': '18866668888', 'password': '123456'}
+2022-05-12 11:13:31 [client.py:25] [INFO] 接口响应状态码是:200
+2022-05-12 11:13:31 [client.py:26] [INFO] 接口响应信息是:{"code":0,"Admin-Token":"e925442a0332471c93fbc60d94971b4d","user":{"deptName":"总部","img":null,"createTime":"2022-03-30 19:10:18","lastLoginTime":"2022-05-12 11:13:30","num":"427675103379739","sex":null,"mobile":"18866668888","realname":"沙陌","parentName":null,"post":null,"userId":1300,"parentId":null,"lastLoginIp":"106.44.27.43","deptId":1,"email":null,"username":"18866668888","status":1},"auth":{"oa":{},"project":{},"crm":{"product":{"read":true,"excelexport":true,"save":true,"update":true,"index":true,"excelimport":true,"status":true},"business":{"read":true,"transfer":true,"teamsave":true,"save":true,"update":true,"index":true,"delete":true},"leads":{"transform":true,"read":true,"transfer":true,"excelexport":true,"save":true,"update":true,"index":true,"excelimport":true,"delete":true},"contract":{"discard":true,"read":true,"transfer":true,"teamsave":true,"save":true,"update":true,"index":true,"delete":true},"receivables":{"read":true,"save":true,"update":true,"index":true,"delete":true},"contacts":{"read":true,"transfer":true,"excelexport":true,"save":true,"update":true,"index":true,"excelimport":true,"delete":true},"customer":{"read":true,"transfer":true,"teamsave":true,"excelexport":true,"save":true,"update":true,"index":true,"lock":true,"excelimport":true,"dealStatus":true,"putinpool":true,"delete":true}}}}
+2022-05-12 11:13:31 [client.py:49] [INFO] 通过$.Admin-Token提取到的结果是:e925442a0332471c93fbc60d94971b4d
+2022-05-12 11:13:31 [client.py:49] [INFO] 通过$.code提取到的结果是:0
+2022-05-12 11:13:31 [client.py:19] [INFO] 接口地址是:http://82.156.74.26:9099/CrmCustomer/addOrUpdate
+2022-05-12 11:13:31 [client.py:20] [INFO] 接口请求方式是:post
+2022-05-12 11:13:31 [client.py:22] [INFO] 接口的verify是:False
+2022-05-12 11:13:31 [client.py:22] [INFO] 接口的headers是:{'Admin-Token': 'e925442a0332471c93fbc60d94971b4d'}
+2022-05-12 11:13:31 [client.py:22] [INFO] 接口的json是:{'entity': {'customer_name': '沙陌1652325210329', 'mobile': '18729399607', 'telephone': '01028375678', 'website': 'http://mtongxue.com/', 'next_time': '2022-05-12 00:00:00', 'remark': '这是备注', 'address': '北京市,北京城区,昌平区', 'detailAddress': '霍营地铁口', 'location': '', 'lng': '', 'lat': ''}}
+2022-05-12 11:13:31 [client.py:25] [INFO] 接口响应状态码是:200
+2022-05-12 11:13:31 [client.py:26] [INFO] 接口响应信息是:{"code":0,"data":{"customerName":"沙陌1652325210329","customerId":3014}}
+2022-05-12 11:13:31 [client.py:49] [INFO] 通过$.data.customerId提取到的结果是:3014
+2022-05-12 11:13:31 [client.py:49] [INFO] 通过$.code提取到的结果是:0
+2022-05-12 11:13:31 [client.py:49] [INFO] 通过$.data.customerName提取到的结果是:沙陌1652325210329
+2022-05-12 11:13:31 [client.py:19] [INFO] 接口地址是:http://82.156.74.26:9099/CrmCustomer/deleteByIds
+2022-05-12 11:13:31 [client.py:20] [INFO] 接口请求方式是:post
+2022-05-12 11:13:31 [client.py:22] [INFO] 接口的verify是:False
+2022-05-12 11:13:31 [client.py:22] [INFO] 接口的headers是:{'Admin-Token': 'e925442a0332471c93fbc60d94971b4d'}
+2022-05-12 11:13:31 [client.py:22] [INFO] 接口的data是:{'customerIds': '3014'}
+2022-05-12 11:13:31 [client.py:25] [INFO] 接口响应状态码是:200
+2022-05-12 11:13:31 [client.py:26] [INFO] 接口响应信息是:{"code":0}
+2022-05-12 11:13:31 [client.py:49] [INFO] 通过$.code提取到的结果是:0

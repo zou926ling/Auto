@@ -1,0 +1,8 @@
+2022-08-29 17:41:10 [client.py:16] [INFO] 接口地址是:http://82.156.74.26:9099/login
+2022-08-29 17:41:10 [client.py:17] [INFO] 接口请求方式是:post
+2022-08-29 17:41:10 [client.py:19] [INFO] 接口的verify是:False
+2022-08-29 17:41:10 [client.py:19] [INFO] 接口的data是:{'username': '18866668888', 'password': '123456'}
+2022-08-29 17:41:10 [client.py:22] [INFO] 接口响应状态码是:200
+2022-08-29 17:41:10 [client.py:23] [INFO] 接口响应信息是:{"code":0,"Admin-Token":"144eafe37f3c45e4ac18c5f09f8ef369","user":{"deptName":"抖音部门-勿动","img":null,"createTime":"2022-08-26 11:31:14","lastLoginTime":"2022-08-29 17:41:10","num":"979687822203739","sex":null,"mobile":"18866668888","realname":"沙陌抖音-不要动我","parentName":null,"post":null,"userId":2342,"parentId":null,"lastLoginIp":"131.228.2.20","deptId":7,"email":null,"username":"18866668888","status":1},"auth":{"oa":{},"project":{},"crm":{"product":{"read":true,"excelexport":true,"save":true,"update":true,"index":true,"excelimport":true,"status":true},"business":{"read":true,"transfer":true,"teamsave":true,"save":true,"update":true,"index":true,"delete":true},"contract":{"discard":true,"read":true,"transfer":true,"teamsave":true,"save":true,"update":true,"index":true,"delete":true},"contacts":{"read":true,"transfer":true,"excelexport":true,"save":true,"update":true,"index":true,"excelimport":true,"delete":true},"customer":{"read":true,"transfer":true,"teamsave":true,"excelexport":true,"save":true,"update":true,"index":true,"lock":true,"excelimport":true,"dealStatus":true,"putinpool":true,"delete":true}}}}
+2022-08-29 17:41:10 [client.py:46] [INFO] 通过$.Admin-Token提取到的结果是:144eafe37f3c45e4ac18c5f09f8ef369
+2022-08-29 17:41:10 [client.py:46] [INFO] 通过$.code提取到的结果是:0

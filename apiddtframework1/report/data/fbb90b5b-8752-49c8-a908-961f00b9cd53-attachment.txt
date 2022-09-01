@@ -1,0 +1,8 @@
+2022-08-29 17:41:19 [client.py:16] [INFO] 接口地址是:http://82.156.74.26:9099/CrmCustomer/deleteByIds
+2022-08-29 17:41:19 [client.py:17] [INFO] 接口请求方式是:post
+2022-08-29 17:41:19 [client.py:19] [INFO] 接口的verify是:False
+2022-08-29 17:41:19 [client.py:19] [INFO] 接口的headers是:{'Admin-Token': 'fe9b5ed3f17a41ed847e9cc6f6f20449'}
+2022-08-29 17:41:19 [client.py:19] [INFO] 接口的data是:{'customerIds': ''}
+2022-08-29 17:41:20 [client.py:22] [INFO] 接口响应状态码是:200
+2022-08-29 17:41:20 [client.py:23] [INFO] 接口响应信息是:{"code":500,"msg":"服务器响应异常"}
+2022-08-29 17:41:20 [client.py:46] [INFO] 通过$.code提取到的结果是:500

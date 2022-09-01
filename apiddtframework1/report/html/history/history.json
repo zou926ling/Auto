@@ -1,0 +1,233 @@
+{
+  "4d38b03944845eb6556f9fb61b08e2fb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "288a534ac430b455",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211747,
+        "stop" : 1652325211813,
+        "duration" : 66
+      }
+    } ]
+  },
+  "fa56c786c679629df4954d9a99dd7aa5" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "999c62fcc307dc2c",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\nrun.py:120: AssumptionFailure\n>>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nAssertionError: 期望是1,实际是0\nassert False",
+      "time" : {
+        "start" : 1652325210872,
+        "stop" : 1652325210951,
+        "duration" : 79
+      }
+    } ]
+  },
+  "dd6f2ec052cbac41085d24a64d897943" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b514b4da0ef760ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325210429,
+        "stop" : 1652325210780,
+        "duration" : 351
+      }
+    } ]
+  },
+  "8cd8813a61b99215c55e9e4613d9e5c2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1705b4aaad1166ba",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n3 Failed Assumptions:\n\nrun.py:120: AssumptionFailure\n>>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nAssertionError: 期望是0,实际是500\nassert False\n\nrun.py:120: AssumptionFailure\n>>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nAssertionError: 期望是500,实际是0\nassert False\n\nrun.py:120: AssumptionFailure\n>>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nAssertionError: 期望是该条数据与其他数据有必要关联，请勿删除,实际是False\nassert False",
+      "time" : {
+        "start" : 1652325212057,
+        "stop" : 1652325212252,
+        "duration" : 195
+      }
+    } ]
+  },
+  "8b70d7309d717065bead1e5f7cdc43b2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "136a291a2d8f88b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211677,
+        "stop" : 1652325211741,
+        "duration" : 64
+      }
+    } ]
+  },
+  "f714985b204dd07f39ec00c34d0535ea" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "60e9097742b98414",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211175,
+        "stop" : 1652325211252,
+        "duration" : 77
+      }
+    } ]
+  },
+  "e2db937cd3e00431bf5ca9094f1f034e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a6302cc92bd58617",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325210971,
+        "stop" : 1652325211171,
+        "duration" : 200
+      }
+    } ]
+  },
+  "7b1bc4cfdb288d6514e7704126964d0b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "29e0d5d29da1fc6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211257,
+        "stop" : 1652325211392,
+        "duration" : 135
+      }
+    } ]
+  },
+  "c24e8bf277c5d917c8d559ae7695e14d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dfbcb8e4ad8a565d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211818,
+        "stop" : 1652325212053,
+        "duration" : 235
+      }
+    } ]
+  },
+  "00cd8b9330aa6b17f899a0424c1fff87" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "65b0c627c227a518",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211397,
+        "stop" : 1652325211469,
+        "duration" : 72
+      }
+    } ]
+  },
+  "97d85ece36ca31d8218f2693832b3539" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "34d1bdb7a92b3f0b",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\nrun.py:120: AssumptionFailure\n>>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nAssertionError: 期望是1,实际是0\nassert False",
+      "time" : {
+        "start" : 1652325210786,
+        "stop" : 1652325210853,
+        "duration" : 67
+      }
+    } ]
+  },
+  "9a54a931595cc36ef559c5cb6bed846a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2ecf3d10c185c37d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211473,
+        "stop" : 1652325211673,
+        "duration" : 200
+      }
+    } ]
+  }
+}

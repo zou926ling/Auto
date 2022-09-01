@@ -1,0 +1,121 @@
+[ {
+  "uid" : "34d1bdb7a92b3f0b",
+  "name" : "新增客户失败-用户名为空",
+  "time" : {
+    "start" : 1652325210786,
+    "stop" : 1652325210853,
+    "duration" : 67
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ecf3d10c185c37d",
+  "name" : "没有任何关联的客户，正常删除",
+  "time" : {
+    "start" : 1652325211473,
+    "stop" : 1652325211673,
+    "duration" : 200
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "29e0d5d29da1fc6",
+  "name" : "新建产品正确",
+  "time" : {
+    "start" : 1652325211257,
+    "stop" : 1652325211392,
+    "duration" : 135
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "136a291a2d8f88b6",
+  "name" : "客户id为空",
+  "time" : {
+    "start" : 1652325211677,
+    "stop" : 1652325211741,
+    "duration" : 64
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1705b4aaad1166ba",
+  "name" : "已关联商机的客户，无法删除",
+  "time" : {
+    "start" : 1652325212057,
+    "stop" : 1652325212252,
+    "duration" : 195
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "999c62fcc307dc2c",
+  "name" : "新增客户失败-手机号格式不正确",
+  "time" : {
+    "start" : 1652325210872,
+    "stop" : 1652325210951,
+    "duration" : 79
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6302cc92bd58617",
+  "name" : "新建联系人正确",
+  "time" : {
+    "start" : 1652325210971,
+    "stop" : 1652325211171,
+    "duration" : 200
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60e9097742b98414",
+  "name" : "新建联系人失败-关联客户id不存在",
+  "time" : {
+    "start" : 1652325211175,
+    "stop" : 1652325211252,
+    "duration" : 77
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "288a534ac430b455",
+  "name" : "多个客户id时，格式不正确",
+  "time" : {
+    "start" : 1652325211747,
+    "stop" : 1652325211813,
+    "duration" : 66
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dfbcb8e4ad8a565d",
+  "name" : "已关联联系人的客户，无法删除",
+  "time" : {
+    "start" : 1652325211818,
+    "stop" : 1652325212053,
+    "duration" : 235
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b514b4da0ef760ac",
+  "name" : "新增客户正确",
+  "time" : {
+    "start" : 1652325210429,
+    "stop" : 1652325210780,
+    "duration" : 351
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65b0c627c227a518",
+  "name" : "新建产品失败-产品编码重复",
+  "time" : {
+    "start" : 1652325211397,
+    "stop" : 1652325211469,
+    "duration" : 72
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

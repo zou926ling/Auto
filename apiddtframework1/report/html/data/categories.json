@@ -1,0 +1,56 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\nrun.py:120: AssumptionFailure\n>>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nAssertionError: 期望是1,实际是0\nassert False",
+      "children" : [ {
+        "name" : "新增客户失败-用户名为空",
+        "uid" : "34d1bdb7a92b3f0b",
+        "parentUid" : "f25c06b3c9dfc5113fe189359f4e5da7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652325210786,
+          "stop" : 1652325210853,
+          "duration" : 67
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[['新增客户', '${host}/CrmCustomer/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.customer_name\":\"\",\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":1\\n}\\n]']]", "'新增客户失败-用户名为空'", "'新增客户接口测试集合'" ]
+      }, {
+        "name" : "新增客户失败-手机号格式不正确",
+        "uid" : "999c62fcc307dc2c",
+        "parentUid" : "f25c06b3c9dfc5113fe189359f4e5da7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652325210872,
+          "stop" : 1652325210951,
+          "duration" : 79
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[['新增客户', '${host}/CrmCustomer/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.mobile\":\"sddsdffd\",\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":1\\n}\\n]']]", "'新增客户失败-手机号格式不正确'", "'新增客户接口测试集合'" ]
+      } ],
+      "uid" : "f25c06b3c9dfc5113fe189359f4e5da7"
+    }, {
+      "name" : "pytest_assume.plugin.FailedAssumption: \n3 Failed Assumptions:\n\nrun.py:120: AssumptionFailure\n>>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nAssertionError: 期望是0,实际是500\nassert False\n\nrun.py:120: AssumptionFailure\n>>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nAssertionError: 期望是500,实际是0\nassert False\n\nrun.py:120: AssumptionFailure\n>>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nAssertionError: 期望是该条数据与其他数据有必要关联，请勿删除,实际是False\nassert False",
+      "children" : [ {
+        "name" : "已关联商机的客户，无法删除",
+        "uid" : "1705b4aaad1166ba",
+        "parentUid" : "1ecc5884d4074ab74ab0742871c458d9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652325212057,
+          "stop" : 1652325212252,
+          "duration" : 195
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[['新增客户', '${host}/CrmCustomer/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.customer_name\":\"沙陌${timestamp}\",\\n}\\n}', '{\\n\"customerId\":\"$.data.customerId\"\\n}', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n},\\n{\\n\"actual\":\"$.data.customerName\",\\n\"expect\":\"沙陌${timestamp}\"\\n},\\n\\n]'], ['新建商机', '${host}/CrmBusiness/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n}\\n]'], ['删除客户', '${host}/CrmCustomer/deleteByIds', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"data\":{\\n\"$.customerIds\":\"${customerId}\"\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":500\\n},\\n{\\n\"actual\":\"$.msg\",\\n\"expect\":\"该条数据与其他数据有必要关联，请勿删除\"\\n},\\n]']]", "'已关联商机的客户，无法删除'", "'删除客户接口测试集合'" ]
+      } ],
+      "uid" : "1ecc5884d4074ab74ab0742871c458d9"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

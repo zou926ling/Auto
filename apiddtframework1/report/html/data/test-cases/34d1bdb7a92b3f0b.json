@@ -1,0 +1,101 @@
+{
+  "uid" : "34d1bdb7a92b3f0b",
+  "name" : "新增客户失败-用户名为空",
+  "fullName" : "run#test_run",
+  "historyId" : "97d85ece36ca31d8218f2693832b3539",
+  "time" : {
+    "start" : 1652325210786,
+    "stop" : 1652325210853,
+    "duration" : 67
+  },
+  "status" : "failed",
+  "statusMessage" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\nrun.py:120: AssumptionFailure\n>>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nAssertionError: 期望是1,实际是0\nassert False",
+  "statusTrace" : "tp = <class 'pytest_assume.plugin.FailedAssumption'>, value = None, tb = None\n\n    def reraise(tp, value, tb=None):\n        try:\n            if value is None:\n                value = tp()\n            if value.__traceback__ is not tb:\n>               raise value.with_traceback(tb)\nE               pytest_assume.plugin.FailedAssumption: \nE               1 Failed Assumptions:\nE               \nE               run.py:120: AssumptionFailure\nE               >>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nE               AssertionError: 期望是1,实际是0\nE               assert False\n\nD:\\Programs\\Python\\python310\\lib\\site-packages\\six.py:718: FailedAssumption",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652325210334,
+      "stop" : 1652325210429,
+      "duration" : 95
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\nrun.py:120: AssumptionFailure\n>>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nAssertionError: 期望是1,实际是0\nassert False",
+    "statusTrace" : "tp = <class 'pytest_assume.plugin.FailedAssumption'>, value = None, tb = None\n\n    def reraise(tp, value, tb=None):\n        try:\n            if value is None:\n                value = tp()\n            if value.__traceback__ is not tb:\n>               raise value.with_traceback(tb)\nE               pytest_assume.plugin.FailedAssumption: \nE               1 Failed Assumptions:\nE               \nE               run.py:120: AssumptionFailure\nE               >>\tpytest.assume(actual_res==expect_res,f'期望是{expect_res},实际是{actual_res}')\nE               AssertionError: 期望是1,实际是0\nE               assert False\n\nD:\\Programs\\Python\\python310\\lib\\site-packages\\six.py:718: FailedAssumption",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "19cb320f296130b8",
+      "name" : "log",
+      "source" : "19cb320f296130b8.txt",
+      "type" : "text/plain",
+      "size" : 989
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "新增客户接口测试集合"
+  }, {
+    "name" : "suite",
+    "value" : "run"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-93HH27QA"
+  }, {
+    "name" : "thread",
+    "value" : "17100-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "run"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_info_list",
+    "value" : "[['新增客户', '${host}/CrmCustomer/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.customer_name\":\"\",\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":1\\n}\\n]']]"
+  }, {
+    "name" : "case_name",
+    "value" : "'新增客户失败-用户名为空'"
+  }, {
+    "name" : "suite_name",
+    "value" : "'新增客户接口测试集合'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "34d1bdb7a92b3f0b.json",
+  "parameterValues" : [ "[['新增客户', '${host}/CrmCustomer/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.customer_name\":\"\",\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":1\\n}\\n]']]", "'新增客户失败-用户名为空'", "'新增客户接口测试集合'" ]
+}

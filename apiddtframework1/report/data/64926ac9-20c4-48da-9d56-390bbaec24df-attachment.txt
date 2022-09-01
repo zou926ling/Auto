@@ -1,0 +1,9 @@
+2022-08-29 17:41:17 [client.py:16] [INFO] 接口地址是:http://82.156.74.26:9099/CrmProduct/saveAndUpdate
+2022-08-29 17:41:17 [client.py:17] [INFO] 接口请求方式是:post
+2022-08-29 17:41:17 [client.py:19] [INFO] 接口的verify是:False
+2022-08-29 17:41:17 [client.py:19] [INFO] 接口的headers是:{'Admin-Token': '88812bd24a9e4c11b2ccb15d8e1145d0'}
+2022-08-29 17:41:17 [client.py:19] [INFO] 接口的json是:{'entity': {'name': 'python全栈自动化', 'category_id': 23, 'num': '1661766069857}', 'price': '6980', 'description': '接口/web/app/持续集成'}}
+2022-08-29 17:41:17 [client.py:22] [INFO] 接口响应状态码是:200
+2022-08-29 17:41:17 [client.py:23] [INFO] 接口响应信息是:{"code":500,"msg":"产品编号已存在，请校对后再添加！"}
+2022-08-29 17:41:17 [client.py:46] [INFO] 通过$.code提取到的结果是:500
+2022-08-29 17:41:17 [client.py:46] [INFO] 通过$.msg提取到的结果是:产品编号已存在，请校对后再添加！

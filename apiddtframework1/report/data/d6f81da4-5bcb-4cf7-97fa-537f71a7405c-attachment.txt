@@ -1,0 +1,10 @@
+2022-08-29 17:41:11 [client.py:16] [INFO] 接口地址是:http://82.156.74.26:9099/CrmCustomer/addOrUpdate
+2022-08-29 17:41:11 [client.py:17] [INFO] 接口请求方式是:post
+2022-08-29 17:41:11 [client.py:19] [INFO] 接口的verify是:False
+2022-08-29 17:41:11 [client.py:19] [INFO] 接口的headers是:{'Admin-Token': '144eafe37f3c45e4ac18c5f09f8ef369'}
+2022-08-29 17:41:11 [client.py:19] [INFO] 接口的json是:{'entity': {'customer_name': '沙陌1661766069857', 'mobile': '18729399607', 'telephone': '01028375678', 'website': 'http://mtongxue.com/', 'next_time': '2022-05-12 00:00:00', 'remark': '这是备注', 'address': '北京市,北京城区,昌平区', 'detailAddress': '霍营地铁口', 'location': '', 'lng': '', 'lat': ''}}
+2022-08-29 17:41:11 [client.py:22] [INFO] 接口响应状态码是:200
+2022-08-29 17:41:11 [client.py:23] [INFO] 接口响应信息是:{"code":0,"data":{"customerName":"沙陌1661766069857","customerId":2369}}
+2022-08-29 17:41:11 [client.py:46] [INFO] 通过$.data.customerId提取到的结果是:2369
+2022-08-29 17:41:11 [client.py:46] [INFO] 通过$.code提取到的结果是:0
+2022-08-29 17:41:11 [client.py:46] [INFO] 通过$.data.customerName提取到的结果是:沙陌1661766069857

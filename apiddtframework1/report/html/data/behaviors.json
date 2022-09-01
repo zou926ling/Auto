@@ -1,0 +1,177 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "新增客户接口测试集合",
+    "children" : [ {
+      "name" : "新增客户正确",
+      "uid" : "b514b4da0ef760ac",
+      "parentUid" : "49f49c37c78ee7b583425df47fe90a6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325210429,
+        "stop" : 1652325210780,
+        "duration" : 351
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[['登录', '${host}/login', 'post', '', '', '{\\n\"token\":\"$.Admin-Token\"\\n}', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n}\\n]'], ['新增客户', '${host}/CrmCustomer/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.customer_name\":\"沙陌${timestamp}\",\\n}\\n}', '{\\n\"customerId\":\"$.data.customerId\"\\n}', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n},\\n{\\n\"actual\":\"$.data.customerName\",\\n\"expect\":\"沙陌${timestamp}\"\\n},\\n\\n]']]", "'新增客户正确'", "'新增客户接口测试集合'" ]
+    }, {
+      "name" : "新增客户失败-用户名为空",
+      "uid" : "34d1bdb7a92b3f0b",
+      "parentUid" : "49f49c37c78ee7b583425df47fe90a6a",
+      "status" : "failed",
+      "time" : {
+        "start" : 1652325210786,
+        "stop" : 1652325210853,
+        "duration" : 67
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[['新增客户', '${host}/CrmCustomer/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.customer_name\":\"\",\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":1\\n}\\n]']]", "'新增客户失败-用户名为空'", "'新增客户接口测试集合'" ]
+    }, {
+      "name" : "新增客户失败-手机号格式不正确",
+      "uid" : "999c62fcc307dc2c",
+      "parentUid" : "49f49c37c78ee7b583425df47fe90a6a",
+      "status" : "failed",
+      "time" : {
+        "start" : 1652325210872,
+        "stop" : 1652325210951,
+        "duration" : 79
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[['新增客户', '${host}/CrmCustomer/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.mobile\":\"sddsdffd\",\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":1\\n}\\n]']]", "'新增客户失败-手机号格式不正确'", "'新增客户接口测试集合'" ]
+    } ],
+    "uid" : "49f49c37c78ee7b583425df47fe90a6a"
+  }, {
+    "name" : "新建联系人接口测试集合",
+    "children" : [ {
+      "name" : "新建联系人正确",
+      "uid" : "a6302cc92bd58617",
+      "parentUid" : "4aae7cb001ed90bfa8859934cea64e4a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325210971,
+        "stop" : 1652325211171,
+        "duration" : 200
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[['登录', '${host}/login', 'post', '', '', '{\\n\"token\":\"$.Admin-Token\"\\n}', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n}\\n]'], ['新增客户', '${host}/CrmCustomer/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.customer_name\":\"沙陌${timestamp}\",\\n}\\n}', '{\\n\"customerId\":\"$.data.customerId\"\\n}', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n},\\n{\\n\"actual\":\"$.data.customerName\",\\n\"expect\":\"沙陌${timestamp}\"\\n},\\n\\n]'], ['新建联系人', '${host}/CrmContacts/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.name\":\"联系人${{cur_timestamp()}}\",\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n}\\n]']]", "'新建联系人正确'", "'新建联系人接口测试集合'" ]
+    }, {
+      "name" : "新建联系人失败-关联客户id不存在",
+      "uid" : "60e9097742b98414",
+      "parentUid" : "4aae7cb001ed90bfa8859934cea64e4a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211175,
+        "stop" : 1652325211252,
+        "duration" : 77
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[['新建联系人', '${host}/CrmContacts/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.customer_id\":999999999,\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":500,\\n},\\n\\n{\\n\"actual\":\"$.msg\",\\n\"expect\":\"服务器响应异常\",\\n}\\n]']]", "'新建联系人失败-关联客户id不存在'", "'新建联系人接口测试集合'" ]
+    } ],
+    "uid" : "4aae7cb001ed90bfa8859934cea64e4a"
+  }, {
+    "name" : "新建产品接口测试集合",
+    "children" : [ {
+      "name" : "新建产品正确",
+      "uid" : "29e0d5d29da1fc6",
+      "parentUid" : "123bf1f3fb609691a06e15dc26546210",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211257,
+        "stop" : 1652325211392,
+        "duration" : 135
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[['登录', '${host}/login', 'post', '', '', '{\\n\"token\":\"$.Admin-Token\"\\n}', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n}\\n]'], ['新建产品', '${host}/CrmProduct/saveAndUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.name\":\"自动化${{cur_timestamp()}}\",\\n\"$.entity.num\":\"${timestamp}}\"\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n}\\n]']]", "'新建产品正确'", "'新建产品接口测试集合'" ]
+    }, {
+      "name" : "新建产品失败-产品编码重复",
+      "uid" : "65b0c627c227a518",
+      "parentUid" : "123bf1f3fb609691a06e15dc26546210",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211397,
+        "stop" : 1652325211469,
+        "duration" : 72
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[['新建产品', '${host}/CrmProduct/saveAndUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.num\":\"${timestamp}}\"\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":500,\\n},\\n{\\n\"actual\":\"$.msg\",\\n\"expect\":\"产品编号已存在，请校对后再添加！\",\\n}\\n]']]", "'新建产品失败-产品编码重复'", "'新建产品接口测试集合'" ]
+    } ],
+    "uid" : "123bf1f3fb609691a06e15dc26546210"
+  }, {
+    "name" : "删除客户接口测试集合",
+    "children" : [ {
+      "name" : "没有任何关联的客户，正常删除",
+      "uid" : "2ecf3d10c185c37d",
+      "parentUid" : "cc876611b4e081a7c032834a5d305a99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211473,
+        "stop" : 1652325211673,
+        "duration" : 200
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[['登录', '${host}/login', 'post', '', '', '{\\n\"token\":\"$.Admin-Token\"\\n}', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n}\\n]'], ['新增客户', '${host}/CrmCustomer/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.customer_name\":\"沙陌${timestamp}\",\\n}\\n}', '{\\n\"customerId\":\"$.data.customerId\"\\n}', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n},\\n{\\n\"actual\":\"$.data.customerName\",\\n\"expect\":\"沙陌${timestamp}\"\\n},\\n\\n]'], ['删除客户', '${host}/CrmCustomer/deleteByIds', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"data\":{\\n\"$.customerIds\":\"${customerId}\"\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n}\\n]']]", "'没有任何关联的客户，正常删除'", "'删除客户接口测试集合'" ]
+    }, {
+      "name" : "客户id为空",
+      "uid" : "136a291a2d8f88b6",
+      "parentUid" : "cc876611b4e081a7c032834a5d305a99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211677,
+        "stop" : 1652325211741,
+        "duration" : 64
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[['删除客户', '${host}/CrmCustomer/deleteByIds', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"data\":{\\n\"$.customerIds\":\"\"\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":500\\n}\\n]']]", "'客户id为空'", "'删除客户接口测试集合'" ]
+    }, {
+      "name" : "多个客户id时，格式不正确",
+      "uid" : "288a534ac430b455",
+      "parentUid" : "cc876611b4e081a7c032834a5d305a99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211747,
+        "stop" : 1652325211813,
+        "duration" : 66
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[['删除客户', '${host}/CrmCustomer/deleteByIds', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"data\":{\\n\"$.customerIds\":\"2783*6276\"\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":500\\n}\\n]']]", "'多个客户id时，格式不正确'", "'删除客户接口测试集合'" ]
+    }, {
+      "name" : "已关联联系人的客户，无法删除",
+      "uid" : "dfbcb8e4ad8a565d",
+      "parentUid" : "cc876611b4e081a7c032834a5d305a99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652325211818,
+        "stop" : 1652325212053,
+        "duration" : 235
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[['新增客户', '${host}/CrmCustomer/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.customer_name\":\"沙陌${timestamp}\",\\n}\\n}', '{\\n\"customerId\":\"$.data.customerId\"\\n}', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n},\\n{\\n\"actual\":\"$.data.customerName\",\\n\"expect\":\"沙陌${timestamp}\"\\n},\\n\\n]'], ['新建联系人', '${host}/CrmContacts/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.name\":\"联系人${{cur_timestamp()}}\",\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n}\\n]'], ['删除客户', '${host}/CrmCustomer/deleteByIds', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"data\":{\\n\"$.customerIds\":\"${customerId}\"\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":500\\n},\\n{\\n\"actual\":\"$.msg\",\\n\"expect\":\"该条数据与其他数据有必要关联，请勿删除\"\\n},\\n]']]", "'已关联联系人的客户，无法删除'", "'删除客户接口测试集合'" ]
+    }, {
+      "name" : "已关联商机的客户，无法删除",
+      "uid" : "1705b4aaad1166ba",
+      "parentUid" : "cc876611b4e081a7c032834a5d305a99",
+      "status" : "failed",
+      "time" : {
+        "start" : 1652325212057,
+        "stop" : 1652325212252,
+        "duration" : 195
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[['新增客户', '${host}/CrmCustomer/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"json\":{\\n\"$.entity.customer_name\":\"沙陌${timestamp}\",\\n}\\n}', '{\\n\"customerId\":\"$.data.customerId\"\\n}', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n},\\n{\\n\"actual\":\"$.data.customerName\",\\n\"expect\":\"沙陌${timestamp}\"\\n},\\n\\n]'], ['新建商机', '${host}/CrmBusiness/addOrUpdate', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":0\\n}\\n]'], ['删除客户', '${host}/CrmCustomer/deleteByIds', 'post', '{\\n\"Admin-Token\":\"${token}\"\\n}', '{\\n\"data\":{\\n\"$.customerIds\":\"${customerId}\"\\n}\\n}', '', 200, '[\\n{\\n\"actual\":\"$.code\",\\n\"expect\":500\\n},\\n{\\n\"actual\":\"$.msg\",\\n\"expect\":\"该条数据与其他数据有必要关联，请勿删除\"\\n},\\n]']]", "'已关联商机的客户，无法删除'", "'删除客户接口测试集合'" ]
+    } ],
+    "uid" : "cc876611b4e081a7c032834a5d305a99"
+  } ]
+}

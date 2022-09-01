@@ -1,0 +1,9 @@
+2022-08-29 17:41:15 [client.py:16] [INFO] 接口地址是:http://82.156.74.26:9099/CrmContacts/addOrUpdate
+2022-08-29 17:41:15 [client.py:17] [INFO] 接口请求方式是:post
+2022-08-29 17:41:15 [client.py:19] [INFO] 接口的verify是:False
+2022-08-29 17:41:15 [client.py:19] [INFO] 接口的headers是:{'Admin-Token': '43f3cbc4bfac497ca1c14c8d0c603f9d'}
+2022-08-29 17:41:15 [client.py:19] [INFO] 接口的json是:{'entity': {'name': '沙陌001联系人', 'customer_id': 999999999, 'mobile': '18729399607', 'telephone': '01028378782', 'email': 'sdsdd@qq.com', 'post': '采购部员工', 'address': '这是地址', 'next_time': '2022-05-10 00:00:00', 'remark': '这是备注'}}
+2022-08-29 17:41:16 [client.py:22] [INFO] 接口响应状态码是:200
+2022-08-29 17:41:16 [client.py:23] [INFO] 接口响应信息是:{"code":0}
+2022-08-29 17:41:16 [client.py:46] [INFO] 通过$.code提取到的结果是:0
+2022-08-29 17:41:16 [client.py:49] [WARNING] 通过$.msg没有提取到结果
